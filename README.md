@@ -1,4 +1,4 @@
-<img src="https://github.com/MuAlphaOmegaEpsilon/MinLog/blob/master/images/MinLog.png" width="400">
+<img src="https://github.com/MuAlphaOmegaEpsilon/MinLog/blob/master/images/MinLog.png" alt="MinLog" width="450">
 
 # Minimalist Logger for C++
 
