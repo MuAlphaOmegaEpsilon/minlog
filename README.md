@@ -10,7 +10,7 @@ Open the LICENSE file for more informations about it.
 
 ## What's the point of having another logging library for C++?
 I wanted a very small set of logging tools, without the usual bloat that a logging library adds, since I'm not going to use most of those features and I have no intention to wrap my head around verbosity levels, logger initializations, and so on. 
-*I JUST WANT TO LOG*
+**I JUST WANT TO LOG**
 
 
 
