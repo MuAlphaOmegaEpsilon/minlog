@@ -1,1 +1,1 @@
-# minlog
+# Minimalist Logger for C++
