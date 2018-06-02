@@ -1,4 +1,4 @@
-![MinLog](https://github.com/MuAlphaOmegaEpsilon/MinLog/blob/master/images/MinLog.png =250x "MinLog Logo")
+![MinLog](https://github.com/MuAlphaOmegaEpsilon/MinLog/blob/master/images/MinLog.png | width=250)
 
 # Minimalist Logger for C++
 
