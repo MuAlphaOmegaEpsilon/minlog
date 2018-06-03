@@ -1,4 +1,5 @@
 <img src="https://github.com/MuAlphaOmegaEpsilon/MinLog/blob/master/images/MinLog.png" alt="MinLog" width="450">
+
 # Minimalist Logger for C++
 This is a README file for MinLog, a minimalist C++ logger header.\
 The README is organized as a FAQ.
