@@ -19,7 +19,7 @@
 //#define NO_LOG // Enabling this will disable all the logging without introducing runtime cost if -01 or greater is selected.
 
 /**
- * @brief Logs to the standard output.
+ * @brief Logs to the standard output like a normal printf.
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
@@ -35,7 +35,7 @@ void LOG (const char* fmt, ...)
 }
 
 /**
- * @brief Logs to the standard output only if the NDEBUG flag is not defined by a macro. Useful for logging only in debug, but not during release.
+ * @brief Logs to the standard output only if the NDEBUG flag is not defined by a macro. Useful for logging in debug, but not during release.
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
