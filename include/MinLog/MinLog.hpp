@@ -1,9 +1,9 @@
 /**
  * @brief This is the header file for the Minimalist Logger for C++. 
- * This is a collection of printf-like functions for logging.
+ * MinLog is a collection of printf-like functions for logging.
  * Every log function appends a newline at the end of the string passed as an argument.
  * @file MinLog.hpp
- * @author Tommaso Bonvicini <tommasobonvicini@gmail.com>
+ * @author Tommaso Bonvicini <tommasobonvicini@gmail.com> https://github.com/MuAlphaOmegaEpsilon/MinLog
  * @date 03-06-2018
  */
 
