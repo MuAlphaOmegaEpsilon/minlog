@@ -30,9 +30,10 @@ After cloning this repo like this:
 ```
 git clone https://github.com/MuAlphaOmegaEpsilon/MinLog
 ```
-Just add this line inside your CMakeLists.txt file:
+Just add these two lines inside your CMakeLists.txt file:
 ```
 ADD_SUBDIRECTORY (***path_to_MinLog_folder***)
+TARGET_LINK_LIBRARIES (***project_name*** PUBLIC MinLog)
 ```
 And then include this library wherever you want in your project with:
 ```
