@@ -16,7 +16,7 @@ I wanted a very small set of logging tools, without the usual bloat that a loggi
 * Under 100 LOC (Lines Of Code) in C++ --> Under 150 LOC in Assembly with the -01 flag
 * Logging can be entirely disabled without additional runtime-cost by defining a macro
 * Always adds a newline after your string for you
-* [Doxygen](www.doxygen.org) ready
+* [Doxygen](http://www.doxygen.org) ready
 * [CMake](https://cmake.org/) ready
 
 ## What are the functions offered by this library?
