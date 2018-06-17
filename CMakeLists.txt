@@ -39,7 +39,7 @@ IF (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)							# This is true whe
 	IF (${BUILD_TESTING})
 		ADD_EXECUTABLE (MinLogTest "${PROJECT_SOURCE_DIR}/tests/main.cpp")
 		TARGET_LINK_LIBRARIES (MinLogTest PRIVATE MinLog)
-	ELSE
+	ELSE ()
 		MESSAGE (STATUS "Remember that you can build the examples in the tests/ folder by adding the -DBUILD_TESTING=ON to CMake.")
 	ENDIF ()
 	

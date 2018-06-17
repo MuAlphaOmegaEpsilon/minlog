@@ -41,7 +41,7 @@ And then include this library wherever you want in your project with:
 ```
 
 ## Are there any examples?
-Yes, you can find a [simple usage case](../blob/master/tests/main.cpp) inside the [tests/](../blob/master/tests) folder.
+Yes, you can find a [simple usage case](../tests/main.cpp) inside the [tests/](../blob/master/tests) folder.
 ### How can I launch it?
 There you go. 
 Remember that this test executable is programmed to log an error when the local time has odd seconds.
