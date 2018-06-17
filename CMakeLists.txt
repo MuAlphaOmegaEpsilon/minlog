@@ -33,8 +33,6 @@ TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include")
 ###############################################################################
 #                                    TESTS                                    #
 ###############################################################################
-OPTION (ENABLE_TESTS "Enable tests" OFF)
-
 IF (${BUILD_TESTING})
 	ADD_EXECUTABLE (MinLogTest "${PROJECT_SOURCE_DIR}/tests/main.cpp")
 	TARGET_LINK_LIBRARIES (MinLogTest PRIVATE MinLog)
