@@ -1,8 +1,41 @@
-CMAKE_MINIMUM_REQUIRED (VERSION 3.9)
+###############################################################################
+#                                CMAKE VERSION                                #
+###############################################################################
+CMAKE_MINIMUM_REQUIRED (VERSION 3.9.5)
 
-PROJECT (MinLog VERSION 1.0.0 DESCRIPTION "A Minimalist Logger for C++")
 
+
+
+###############################################################################
+#                                  PROJECT                                    #
+###############################################################################
+PROJECT (MinLog LANGUAGES CXX VERSION 1.0.0 DESCRIPTION "A Minimalist Logger for C++")
+
+
+
+
+###############################################################################
+#                                  LIBRARY                                    #
+###############################################################################
 ADD_LIBRARY (MinLog INTERFACE)
-TARGET_SOURCES (MinLog INTERFACE MinLog.hpp)
-TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include/MinLog")
 
+
+
+
+###############################################################################
+#                               HEADERS INCLUSION                             #
+###############################################################################
+TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include")
+
+
+
+
+###############################################################################
+#                                    TESTS                                    #
+###############################################################################
+OPTION (ENABLE_TESTS "Enable tests" OFF)
+
+IF (${BUILD_TESTING})
+	ADD_EXECUTABLE (MinLogTest "${PROJECT_SOURCE_DIR}/tests/main.cpp")
+	TARGET_LINK_LIBRARIES (MinLogTest PRIVATE MinLog)
+ENDIF()
