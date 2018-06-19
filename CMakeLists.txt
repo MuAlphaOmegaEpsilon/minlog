@@ -25,7 +25,7 @@ ADD_LIBRARY (MinLog INTERFACE)
 ###############################################################################
 #                               HEADERS INCLUSION                             #
 ###############################################################################
-TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include")
+TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include")	
 
 
 
@@ -34,13 +34,12 @@ TARGET_INCLUDE_DIRECTORIES (MinLog INTERFACE "${PROJECT_SOURCE_DIR}/include")
 #                                    TESTS                                    #
 ###############################################################################
 IF (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)							# This is true when someone is building the MinLog standalone
-	SET (COMPILER "${COMPILER} -Wall -Wextra -Werror -pedantic")				# Enable all warnings
-
-	IF (${BUILD_TESTING})
+	IF (${BUILD_TESTING})														# This is true when the -DBUILD_TESTING=ON flag is passed to the cmake command
 		ADD_EXECUTABLE (MinLogTest "${PROJECT_SOURCE_DIR}/tests/main.cpp")
 		TARGET_LINK_LIBRARIES (MinLogTest PRIVATE MinLog)
+		SET_PROPERTY (TARGET MinLogTest PROPERTY CMAKE_CXX_FLAGS 				# Enable all warnings
+						"${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -pedantic")			
 	ELSE ()
 		MESSAGE (STATUS "Remember that you can build the examples in the tests/ folder by adding the -DBUILD_TESTING=ON to CMake.")
 	ENDIF ()
-	
 ENDIF ()
