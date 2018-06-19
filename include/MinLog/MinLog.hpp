@@ -23,7 +23,7 @@
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
-void LOG (const char* fmt, ...)
+inline void LOG (const char* fmt, ...) noexcept
 {
     #ifndef NO_LOG
 	va_list args; // The variable containing the list of variadic arguments
@@ -39,7 +39,7 @@ void LOG (const char* fmt, ...)
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
-void LOG_DEBUG (const char* fmt, ...)
+inline void LOG_DEBUG (const char* fmt, ...) noexcept
 {
     #ifndef NO_LOG
     #ifndef NDEBUG
@@ -57,7 +57,7 @@ void LOG_DEBUG (const char* fmt, ...)
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
-void LOG_ERROR (const char* fmt, ...)
+inline void LOG_ERROR (const char* fmt, ...) noexcept
 {
     #ifndef NO_LOG
     va_list args; // The variable containing the list of variadic arguments
@@ -74,7 +74,7 @@ void LOG_ERROR (const char* fmt, ...)
  * @param fmt The format of the string.
  * @param ... The variadic function arguments.
  */
-void LOG_EXIT (const char* fmt, ...)
+inline void LOG_EXIT (const char* fmt, ...) noexcept
 {
     #ifndef NO_LOG
     va_list args; // The variable containing the list of variadic arguments
