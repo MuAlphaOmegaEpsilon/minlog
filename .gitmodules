@@ -1,0 +1,3 @@
+[submodule "libs/buildmode"]
+	path = libs/buildmode
+	url = https://github.com/MuAlphaOmegaEpsilon/buildmode
